@@ -1,0 +1,53 @@
+\documentclass{article} 
+
+\usepackage[table]{xcolor}
+\usepackage{amsmath,amssymb,amsthm,apacite,booktabs,changepage,datetime,enumitem,forest,inconsolata,listings,microtype}
+
+\newdateformat{properdate}{\THEDAY\ \monthname\ \THEYEAR}
+
+\frenchspacing
+\setenumerate{label=(\arabic*)}
+
+%\DisableLigatures[-]{}
+
+\definecolor{grey}{gray}{0.3}
+\definecolor{p}{RGB}{059, 000, 154}
+\definecolor{b}{RGB}{010, 081, 171}
+\definecolor{g}{RGB}{061, 159, 011}
+\definecolor{r}{RGB}{152, 000, 022}
+\definecolor{lgrey}{gray}{0.9}
+\definecolor{lp}{RGB}{119, 061, 211}
+\definecolor{lb}{RGB}{091, 141, 215}
+\definecolor{lg}{RGB}{146, 223, 108}
+\definecolor{lr}{RGB}{212, 085, 105}
+
+\lstset{
+	backgroundcolor=\color{white},   % choose the background color
+	frame=single,
+	numberstyle=\small,
+	basicstyle=\ttfamily,
+	numbers=left,
+	tabsize=4,
+	escapechar=~,
+	breaklines=true,                 % automatic line breaking only at whitespace
+	commentstyle=\color{g},    % comment style
+	keywordstyle=\color{b},       % keyword style
+	stringstyle=\color{p}     % string literal style
+}
+
+\def\inline{\lstinline[basicstyle=\ttfamily]} % Via http://tex.stackexchange.com/a/44708
+
+\newcommand{\todo}{\textbf{\color{r}TODO}}
+\newcommand{\aside}[1]{{\small\color{grey}(#1)}}
+
+\title{}
+\author{}
+\date{\properdate\today}
+
+\begin{document}
+\maketitle
+
+
+% \bibliography{_bib}
+% \bibliographystyle{apacite}
+\end{document}
